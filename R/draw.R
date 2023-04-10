@@ -91,7 +91,7 @@ addDrawToolbar <- function(
       singleFeature = singleFeature)),
     edit = editOptions )
 
-  leaflet::invokeMethod(map, leaflet::getMapData(map), "addToolbar",
+  leaflet::invokeMethod(map, leaflet::getMapData(map), "addDrawToolbar",
                         targetLayerId, targetGroup, options)
 }
 
