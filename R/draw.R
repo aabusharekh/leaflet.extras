@@ -91,7 +91,7 @@ addDrawToolbar <- function(
       singleFeature = singleFeature)),
     edit = editOptions )
 
-  leaflet::invokeMethod(map, leaflet::getMapData(map), "addDrawToolbar",
+  leaflet::invokeMethod(map, leaflet::getMapData(map), "addToolbar",
                         targetLayerId, targetGroup, options)
 }
 
@@ -100,5 +100,5 @@ addDrawToolbar <- function(
 #' @rdname draw
 #' @export
 removeDrawToolbar <- function(map, clearFeatures = FALSE) {
-  leaflet::invokeMethod(map, leaflet::getMapData(map), "removeDrawToolbar", clearFeatures)
+  leaflet::invokeMethod(map, leaflet::getMapData(map), "removeToolbar", clearFeatures)
 }
